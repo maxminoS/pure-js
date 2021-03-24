@@ -1,5 +1,11 @@
 body {
-  background-color: gray;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.title {
+  margin-top: 150px;
+  padding: 20px;
 }
 
 .navbar {
@@ -14,20 +20,28 @@ body {
 }
 
 .nav-header {
-  background-color: white;
-  padding: 5px 10px 5px 10px;
+  background-color: cornflowerblue;
+  padding: 15px;
 }
 
 .logo {
+  margin-left: 20px;
   width: 30px;
   height: 30px;
 }
 
 .hamburger {
+  display: none;
   border: none;
   background: none;
   position: absolute;
   right: 5px;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 
 .hamburger.active {
@@ -36,25 +50,65 @@ body {
 }
 
 .links {
-  height: 0;
+  float: left;
+  display: inline;
+  height: 90px;
+  list-style: none;
   overflow: hidden;
-  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  display: inline;
+  padding: 40px;
+  margin: 20px;
 }
 
 .links a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .links.active {
+  margin: 0;
   height: auto;
 }
 
 .links.active li {
-  padding: 10px;
-  left: 0;
+  padding: 20px;
+  display: block;
 }
 
-.links.active li:hover {
-  background-color: lightgray;
+.links li:hover {
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 650px) {
+  .hamburger {
+    display: inline;
+  }
+
+  .links {
+    width: 100%;
+    height: 0;
+    list-style: initial;
+    background-color: cornflowerblue;
+  }
+
+  .links li {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .links {
+    position: absolute;
+    top: -19px;
+    left: 80px;
+  }
+  .links a {
+    position: relative;
+    top: 20px;
+  }
 }
