@@ -1,22 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+.descriptor {
+  position: absolute;
+  top: 10%;
+  padding-left: 30%;
+}
+
 .hamburger {
-  background-color: lightgray;
+  background-color: cornflowerblue;
   border: none;
   border-radius: 3px;
   position: fixed;
   top: 20px;
   right: 10px;
   padding: 10px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hamburger img {
   width: 30px;
   height: 30px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hamburger.active {
-  transform: translateX(-70px);
+  transform: translateX(-480px);
 }
 
 .hamburger.active img {
@@ -24,14 +34,15 @@
 }
 
 .navbar {
-  background-color: lightgray;
+  background-color: cornflowerblue;
   position: fixed;
   top: 0;
   right: 0;
+  width: 475px;
   height: 100vh;
   padding: 14px;
-  transform: translateX(75px);
-  transition: transform 0.5s ease-in-out;
+  transform: translateX(485px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar.active {
@@ -44,14 +55,18 @@
 }
 
 .links li {
-  padding: 6px;
+  padding: 12px;
 }
 
 .links li:hover {
-  background-color: gray;
+  background-color: darkturquoise;
+}
+
+.links li:active {
+  background-color: aqua;
 }
 
 .links a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
