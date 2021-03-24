@@ -1,5 +1,8 @@
 body {
   background-color: rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .carousel {
@@ -19,6 +22,19 @@ button {
   height: 50px;
   left: 50%;
   border: none;
+  border-radius: 50px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+    padding: 8px 13px 6px;
 }
 
 #prev {
