@@ -1,5 +1,17 @@
+body {
+  font-family: sans-serif;
+}
 body.active {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+p {
+  position: absolute;
+  width: 350px;
+  top: 20%;
+  left: 50%;
+  margin-left: -175px;
+  text-align: center;
 }
 
 button {
