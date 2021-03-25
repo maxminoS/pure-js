@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+.title {
+  background-color: cornflowerblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  grid-auto-rows: minmax(300px, 1fr);
+  grid-gap: 25px;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.card {
+  list-style-type: none;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card > hr {
+  margin-top: 75px;
+  width: 50px;
+}
+
+.card > p {
+  height: 72px;
+  padding: 25px;
+}
+
+.card > a > button {
+  background-color: lightblue;
+  color: white;
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.card > a > button:focus {
+  outline: none;
+}
+
+.card > a > button:hover {
+  background-color: deepskyblue;
+}
+
+.card > a > button:active {
+  padding: 8px 13px 6px;
+}
+
+.card-header {
+  background-color: cornflowerblue;
+  border-radius: 18px;
+  position: absolute;
+  width: 223px;
+}
+
+@media screen and (min-width: 1050px){
+  .card-layout {
+    grid-template-columns: repeat(3, 225px);
+  }
+}
