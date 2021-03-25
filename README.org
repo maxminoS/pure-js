@@ -1,0 +1,37 @@
+#+TITLE:Pure Projects
+
+A variety of responsive micro web projects built purely using HTML, CSS, and vanilla JavaScript.
+
+#+BEGIN_HTML
+<img src="images/project-list.png" alt="project list">
+#+END_HTML
+
+* Navigation Bar
+A responsive navbar that shrinks when it reaches a threshold
+#+BEGIN_HTML
+<img src="images/navbar.gif" alt="responsive navigation bar">
+#+END_HTML
+
+* Sidebar
+A toggle-able sidebar for navigation
+#+BEGIN_HTML
+<img src="images/sidebar.gif" alt="side navigation bar">
+#+END_HTML
+
+* Carousel
+An image slider displaying select images, rotatable with user interaction
+#+BEGIN_HTML
+<img src="images/carousel.gif" alt="image carousel slider">
+#+END_HTML
+
+* Modal
+A popup feature often used for user notifications and alerts
+#+BEGIN_HTML
+<img src="images/modal.gif" alt="modal popup feature">
+#+END_HTML
+
+* Typewriter
+A text effect that resembles a typewriter, or in this case, a teletypewriter
+#+BEGIN_HTML
+<img src="images/typewriter.gif" alt="typewriter effect">
+#+END_HTML
